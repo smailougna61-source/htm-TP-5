@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3</title>
+</head>
+<body>
+  <button onclick = "lancerquiz()">Star Quiz</button>
+    <script>
+      let Questions=[["0*10= ?","0"],
+      ["Quel est capitale de maroc: ?","Rabat"],
+      ["Quel est capitale de autriche: ?","Vienne"],
+      ["Quel est capitale de france: ?","Paris"]];
+
+      let s=0;
+      function lancerquiz(){
+        for (let i=0;i<4;i++){
+          let V=prompt(Questions[i][0]);
+          if (V==Questions[i][1]){
+            window.alert("Reponse correct.")
+            s+=1;
+          }
+
+          else{
+            window.alert("Reponse incorrect.")  
+          }}
+      }
+    window.alert("Score = " + s/4);
+    </script>
+</body>
+</html>
