@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+</head>
+<body>
+    <script>
+        let nombreSecret = Math.floor(Math.random() * 10) + 1;
+        let c = 0;
+        let pr;
+        do {
+            p = parseInt(prompt("Donner un nombre entre 1 et 10 :"));
+            c++;
+            if (p < nombreSecret) {
+                alert("Le nombre est plus grand.");
+            } 
+            else if (p > nombreSecret) {
+                alert("Le nombre est plus petit.");
+            }
+        }
+        while (p !== nombreSecret);
+            alert("Oui si " + nombreSecret + " vous avez trouvé en " + c + " tentatives.");
+            console.log("Nombre trouvé en", c , "tentatives")
+    </script>
+    </script>
+</body>
+</html>
