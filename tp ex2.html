@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX:2</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Donner le premier nombre :"));
+        let b = parseFloat(prompt("Donner le deuxième nombre :"));
+        let somme = a + b;
+        let difference = a - b;
+        let quotient;
+
+        if (b !== 0) {
+            quotient = a / b;
+        }
+
+        else {
+            quotient = " car division par zéro impossible.)";
+        }
+
+        console.log("Somme =", somme);
+        console.log("Différence =", difference);
+        console.log("Quotient =", quotient);
+    </script>    
+</body>
+</html>
